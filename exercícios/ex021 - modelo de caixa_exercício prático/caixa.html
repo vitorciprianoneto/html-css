@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags semanticas</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px
+    }
+
+    /*Um seletor com (*) em CSS significa "todos os elementos" (um seletor universal), ou seja, ele seleciona todos os elementos HTML da página ou dentro de outro elemento. Isso é útil para aplicar um estilo geral ou para resetar as margens e o espaçamento padrão dos elementos.*/
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: darkgray;
+    }
+    header {
+        margin: 10px;
+        color: white;
+    }
+    nav {
+        background-color: lightgray;
+        margin: 10px;
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.411);
+        border-radius: 2.5px;
+    }
+    nav > a {
+        text-decoration: none;
+        margin: 10px;
+    }
+    nav > a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+    main {
+        background-color: white;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    article {
+        background-color: lightgray;
+        margin: 10px;
+    }
+    article > h2 {
+        margin: 10px
+    }
+    article > p {
+        text-align: justify;
+        margin: 10px;
+    }
+    article > aside {
+        background-color: lightslategray;
+        padding: 1.5px;
+    }
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 3px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Teste de Site em grouping tags</h1>
+    </header>
+    <nav>
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deleniti fugit, veritatis cupiditate nesciunt ducimus ipsam pariatur vitae quidem tempore non eligendi iure expedita dolore adipisci eaque nam, laboriosam dignissimos.
+                </p>
+                <aside>
+                    Artigo escrito por Eu mesmo.
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>Desenvolvido através do Curso em Vídeo.</footer>
+</body>
+</html>
