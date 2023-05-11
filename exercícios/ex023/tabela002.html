@@ -18,6 +18,7 @@
             width: 500px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
         }
 
         th, td {
@@ -32,6 +33,12 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         caption {
